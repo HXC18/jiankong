@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="https://minecraft-server-status.com/build/assets/favicon.svg">
+
+        <!-- Fonts -->
+        <style type="text/css">@font-face{font-family:Open Sans;font-style:normal;font-weight:500;font-stretch:100%;font-display:swap;src:local("Open Sans SemiBold"),local("OpenSans-SemiBold"),url(/build/assets/OpenSans-SemiBold-WebFont-cJHYmctz.woff) format("woff"),url(/build/assets/OpenSans-SemiBold-WebFont-DjlyUy-R.woff2) format("woff2"),url(/build/assets/OpenSans-SemiBold-WebFont-DEbZAlsf.ttf) format("truetype")}@font-face{font-family:Open Sans;font-style:normal;font-weight:800;font-display:swap;src:local("Open Sans ExtraBold"),local("OpenSans-ExtraBold"),url(/build/assets/OpenSans-ExtraBold-WebFont-C5JspYxa.woff) format("woff"),url(/build/assets/OpenSans-ExtraBold-WebFont-DJjuv7Pw.woff2) format("woff2"),url(/build/assets/OpenSans-ExtraBold-WebFont-Bl-dd_iS.ttf) format("truetype")}</style>
+
+        <!-- Assets -->
+        <link rel="preload" as="style" href="https://minecraft-server-status.com/build/assets/app-CekeAP_h.css" /><link rel="modulepreload" href="https://minecraft-server-status.com/build/assets/app-C9tEnHdr.js" /><link rel="stylesheet" href="https://minecraft-server-status.com/build/assets/app-CekeAP_h.css" /><script type="module" src="https://minecraft-server-status.com/build/assets/app-C9tEnHdr.js"></script>
+        <!-- Inertia -->
+        
+    </head>
+    <body class="antialiased relative animate-body-show font-sans text-white    min-h-screen bg-gradient-to-b from-[#100b15] to-[#040027]  bg-[center_top] bg-no-repeat bg-cover [image-rendering:pixelated]" >
+        <div class="stars-container z-[-1]">
+            <svg class="stars [&>rect]:[filter:drop-shadow(0_0_3px_#ad3cf3)_drop-shadow(0_0_3px_#ad3cf3)_drop-shadow(0_0_3px_#ad3cf3)] [&>rect]:fill-primary-300 [&>rect[width='4']]:opacity-90 [&>rect[width='3']]:opacity-80 [&>rect[width='2']]:opacity-70 [&>rect[width='1']]:opacity-60" viewBox="0 0 500 500" preserveAspectRatio="none">
+                <!-- Верхняя треть -->
+                <rect x="18" y="35" width="2" height="2"/>
+                <rect x="480" y="120" width="3" height="3"/>
+                <rect x="150" y="80" width="1" height="1"/>
+                <rect x="320" y="10" width="2" height="2"/>
+                <rect x="420" y="160" width="2" height="2"/>
+
+
+                <rect x="380" y="230" width="3" height="3"/>
+
+                <!-- Нижняя треть -->
+                <rect x="50" y="380" width="3" height="3"/>
+                <rect x="230" y="450" width="1" height="1"/>
+                <rect x="390" y="340" width="4" height="4"/>
+                <rect x="120" y="490" width="2" height="2"/>
+                <rect x="280" y="410" width="1" height="1"/>
+
+                <!-- Боковые зоны (горизонтальные края) -->
+                <rect x="5" y="220" width="2" height="2"/>
+                <rect x="495" y="280" width="3" height="3"/>
+                <rect x="2" y="150" width="4" height="4"/>
+                <rect x="498" y="400" width="1" height="1"/>
+                <rect x="10" y="320" width="2" height="2"/>
+            </svg>
+        </div>
+        <style type="text/css">
+            .stars-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                overflow: hidden;
+            }
+
+            .stars {
+                width: 100%;
+                height: 100%;
+                preserveAspectRatio: xMidYMid slice;
+            }
+        </style>
+        <script type="text/javascript">
+            document.addEventListener('scroll', () => {
+                const stars = document.querySelector('.stars');
+                const scrollY = window.scrollY;
+                stars.style.transform = `translateY(-${scrollY * 0.01}px)`;
+            });
+        </script>
+        <div id="app" data-page="{&quot;component&quot;:&quot;Home&quot;,&quot;props&quot;:{&quot;errors&quot;:{},&quot;defaultLocale&quot;:&quot;en&quot;,&quot;allowedLocale&quot;:[&quot;cn&quot;,&quot;de&quot;,&quot;en&quot;,&quot;es&quot;,&quot;fr&quot;,&quot;it&quot;,&quot;pt&quot;,&quot;ru&quot;,&quot;ja&quot;],&quot;locale&quot;:&quot;cn&quot;,&quot;ziggy&quot;:{&quot;url&quot;:&quot;https:\/\/minecraft-server-status.com&quot;,&quot;port&quot;:null,&quot;defaults&quot;:[],&quot;routes&quot;:{&quot;home&quot;:{&quot;uri&quot;:&quot;{locale?}&quot;,&quot;methods&quot;:[&quot;GET&quot;,&quot;HEAD&quot;],&quot;parameters&quot;:[&quot;locale&quot;]},&quot;backend.api.&quot;:{&quot;uri&quot;:&quot;backend\/api\/server-info&quot;,&quot;methods&quot;:[&quot;POST&quot;]},&quot;backend.api.generated::khdmiTzlpp7Y4oZC&quot;:{&quot;uri&quot;:&quot;backend\/api\/altcha-generate&quot;,&quot;methods&quot;:[&quot;POST&quot;]},&quot;storage.local&quot;:{&quot;uri&quot;:&quot;storage\/{path}&quot;,&quot;methods&quot;:[&quot;GET&quot;,&quot;HEAD&quot;],&quot;wheres&quot;:{&quot;path&quot;:&quot;.*&quot;},&quot;parameters&quot;:[&quot;path&quot;]}},&quot;location&quot;:&quot;http:\/\/minecraft-server-status.com\/cn&quot;}},&quot;url&quot;:&quot;\/cn&quot;,&quot;version&quot;:&quot;67d8c499fd5029cad3568879f78a39a7&quot;,&quot;clearHistory&quot;:false,&quot;encryptHistory&quot;:false}"></div>
+    </body>
+</html>
